@@ -21,9 +21,13 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 3.53, < 7"
     }
+    google-beta = {
+      source  = "hashicorp/google-beta"
+      version = ">= 3.53, < 7"
+    }
   }
 
   provider_meta "google" {
-    module_name = "blueprints/terraform/nemo/v0.0.1"
+    module_name = "blueprints/terraform/terraform-google-nemo/v0.0.1"
   }
 }
